@@ -10,6 +10,7 @@ install:
 deploy:
   provider: s3
   access_key_id: AKIAI6IKW3HG5C6XRL4A
+  edge: true
   endpoint: s3-website.eu-west-3.amazonaws.com
   region: us-west-3
   secret_access_key:
