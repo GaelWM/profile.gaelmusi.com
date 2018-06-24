@@ -14,7 +14,7 @@ class App extends Component {
           You will learn about Gael's career as a developer, the programming languages he masters, etc.
         </p>
 
-          <a href="profile.gaelmusi.com"> Click here</a>
+          <a href="www.profile.gaelmusi.com"> Click here</a>
 
       </div>
     );
