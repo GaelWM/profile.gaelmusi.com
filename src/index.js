@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './header.js';
 
 // import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
@@ -9,19 +8,19 @@ import './header.js';
 // ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
 
-	class Profile extends React.Component 
-	{
-    	render() {
+	// class Profile extends React.Component 
+	// {
+ //    	render() {
     
-	      return null
-    	}
-  	}
+	//       return null
+ //    	}
+ //  	}
 
 
-	ReactDOM.render(
-    	<Profile />,
-    	document.getElementById('root')
-  	);
+	// ReactDOM.render(
+ //    	<Profile />,
+ //    	document.getElementById('root')
+ //  	);
 
 
 
