@@ -8,19 +8,18 @@ import './index.css';
 // ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
 
-	// class Profile extends React.Component 
-	// {
- //    	render() {
-    
-	//       return null
- //    	}
- //  	}
+	class Profile extends React.Component 
+	{
+    	render() {
+	      return null
+    	}
+  	}
 
 
-	// ReactDOM.render(
- //    	<Profile />,
- //    	document.getElementById('root')
- //  	);
+	ReactDOM.render(
+    	<Profile />,
+    	document.getElementById('root')
+  	);
 
 
 
