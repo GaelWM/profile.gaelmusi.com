@@ -20,3 +20,5 @@ deploy:
   acl: bucket_owner_full_control
   on:
     repo: GaelWM/profile.gaelmusi.com
+
+    
