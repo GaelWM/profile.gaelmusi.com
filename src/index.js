@@ -1,25 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-
-// import App from './App';
-// import registerServiceWorker from './registerServiceWorker';
-
-// ReactDOM.render(<App />, document.getElementById('root'));
-// registerServiceWorker();
-
-	class Profile extends React.Component 
-	{
-    	render() {
-	      return null
-    	}
-  	}
+//import './index.css';
+//import App from './App';
+import RepoCommits from './repo-commits';
 
 
 	ReactDOM.render(
-    	<Profile />,
-    	document.getElementById('root')
-  	);
+		<RepoCommits />,
+		document.getElementById('div-commits')
+	);
+
+	// ReactDOM.render(
+    	// <App />,
+    	// document.getElementById('root')
+  	// );
 
 
 
