@@ -7,17 +7,16 @@ install:
   - yarn test
   - yarn build
 
-
 deploy:
   provider: s3
   access_key_id: AKIAIGD77HFYDYZN5BVQ
   endpoint: s3-website.eu-west-3.amazonaws.com
   region: eu-west-3
   secret_access_key:
-    secure: vccW8Kj7PYmTj/vzFTyVj31kFAMDnxJGX+1toj1D2Dt+2hUXgYtvtf0oMyUzAwZUIOyXE4m7rIz6lbPGod0cDarqQB0k2NivWAhsbI72+gzR+Tyb+B8ZzlG68FQXhxD7e8iKAfX+ixs7XM+MHbWQ2ZBltYsOLST99lxj/iyNG+nQEAbI8vSoShoCTK2Y4FYx555DpsNw5zgWtaF4gn/4PIJpihJO0CgSaVB9mBsO2MDJzftjTtSz8W+/DjyvNOmT4L8h6b2Oj1LuZ8qoLUunY7OckQk++XcLG0njJSvqK3mMSw4GaLtSCMGW8ITZWpJejXJhtabthzX7HwSS8v9uLuA1uv6S/zwQSgrGvMhIJKtrGfC0KC11A6m6MAcWQhTAOsIsMnt8WYpnj1lIdn4SnRCYHgKZ4qbLF6GsG3WbEglaardEXO4rzICcvNiFTRpHqviv/iJ/E3rTwsdml0gVCSZMPShq4rtfJEZfCVAWtdwNa9mD7oQJecSM5e4o43MBrdL2TH8T3lktlEatIEdlTgPQ5WSO56OMFWM8hJHcgZu6B0NVAf9zUqDTlRm/koHSHOIgukPTs/w8fJGSqH3mD2LZsT19KAxrzLyYTObHagGJmRjeBk2Unmf1Ol6IpPtsyVO6VgK8P18lPCRQiijocwfcm5TnttCRUFs+Rk4A910=
+    secure: AG8LZktC/dguhY3Iu7MNDIUu2m9qYiNG8qRUg7VC8H/eqn1x4u+p3LfoEklaYNFRCLjxjnETeot6NvCPTO6e/RzonDiwmZ2kNNmtHwOhZE2rFBAbzuSI5+wiWQ8Ux2EniGHjfT+aHiLTHTLZ8uae2PC4nv4DzucZH9Rk2OhKFScrhEX/8CSzoS7Byr2j+E6Xi6daS2sgtRZvx7d5RXlexc2GuV18BbhrVsUS/O4uBxhH2RFmkxh1kNh6JDuCh6yIzvO0ACYgaovby5IW8pY2yPM47crr0xb4SfsUCJdcASm9TXsAiYUzaN3fy7cikwsDxb+mHwpXPUdQpX0Z1vWxwOcVvV6j408dJR1/t2pEOrlTEDQF+EoQ/FpyWYArCjARu7M19+EcePFSAnNARgakcUmV2Zcl0HfUGENSHtY4i37ftKTpIukDk7sTjRqASI2JMZxxrn1sYJvyZgGWkJMpIlHkSZunRIWsl/W9LX23XdtTjfKRR7vQ/Qxw2u9yoWgeiodvNvAveylmnYN9CnEP2DuWiBjdrOkZuAjhIkQlmsvBjWB8Ou4uuLX19Uw/MRMKL/nVxE+b0gJJ2BnloItARRT0Ke3RXYKnzMIL0t6SGcSMEg9mt3+nmDi0HawhfeZlvJkW9hN2O/F93kO6rg57+zpG50zdX8T1xaG64eAhj30=
   bucket: profile.gaelmusi.com
-  local-dir: build
   skip_cleanup: true
+  local-dir: build
   acl: bucket_owner_full_control
   on:
     repo: GaelWM/profile.gaelmusi.com
