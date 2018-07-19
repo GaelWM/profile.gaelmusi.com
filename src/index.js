@@ -1,19 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 //import './index.css';
 //import App from './App';
-import RepoCommits from './repo-commits';
+import RepoCommits from "./RepoCommits";
 
+ReactDOM.render(<RepoCommits />, document.getElementById("div-commits"));
 
-	ReactDOM.render(
-		<RepoCommits />,
-		document.getElementById('div-commits')
-	);
-
-	// ReactDOM.render(
-    	// <App />,
-    	// document.getElementById('root')
-  	// );
-
-
-
+// ReactDOM.render(
+// <App />,
+// document.getElementById('root')
+// );
