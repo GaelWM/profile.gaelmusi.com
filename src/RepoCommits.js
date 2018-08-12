@@ -19,7 +19,7 @@ class RepoCommits extends Component {
     }
 
     render() {
-        const mycommits = this.state.commits.map(function(commit, i) {
+        const mycommits = this.state.commits.map(function (commit, i) {
             return (
                 <li key={i} className="list-group-item list-group-item-action">
                     {commit.commit.message}
