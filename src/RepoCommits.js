@@ -1,44 +1,47 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+function Commit(props) {
+  return (
+    <li key={props.index} className="list-group-item list-group-item-action">
+      {props.message}
+    </li>
+  );
+}
+
+function CommitList(props) {
+  return <ol className="list-group">{props.commits}</ol>;
+}
+
 class RepoCommits extends Component {
-    constructor() {
-        super();
-        this.state = {
-            commits: []
-        };
-        this.handleGetRepoCommits = this.handleGetRepoCommits.bind(this);
-    }
+  constructor() {
+    super();
+    this.state = {
+      commits: []
+    };
+    this.handleGetRepoCommits = this.handleGetRepoCommits.bind(this);
+  }
 
-    handleGetRepoCommits() {
-        axios
-            .get(
-                "https://api.github.com/repos/gaelwm/profile.gaelmusi.com/commits"
-            )
-            .then(response => this.setState({ commits: response.data }));
-    }
+  handleGetRepoCommits() {
+    axios
+      .get("https://api.github.com/repos/gaelwm/profile.gaelmusi.com/commits")
+      .then(response => this.setState({ commits: response.data }));
+  }
 
-    render() {
-        const mycommits = this.state.commits.map(function (commit, i) {
-            return (
-                <li key={i} className="list-group-item list-group-item-action">
-                    {commit.commit.message}
-                </li>
-            );
-        });
+  render() {
+    const mycommits = this.state.commits.map(function(commit, i) {
+      return <Commit index={i} message={commit.commit.message} />;
+    });
 
-        return (
-            <div className="card-panel">
-                <ol className="list-group">{mycommits}</ol>
-                <button
-                    className="btn btn-primary"
-                    onClick={this.handleGetRepoCommits}
-                >
-                    Get Last Commits
-                </button>
-            </div>
-        );
-    }
+    return (
+      <div className="card-panel">
+        <CommitList commits={mycommits} />
+        <button className="btn btn-primary" onClick={this.handleGetRepoCommits}>
+          Get Last Commits
+        </button>
+      </div>
+    );
+  }
 }
 
 export default RepoCommits;
