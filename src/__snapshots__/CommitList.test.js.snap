@@ -1,17 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`list the commits correctly 1`] = `
-<div
-  className="card-panel"
+exports[`CommitList renders properly  1`] = `
+<ol
+  className="list-group"
 >
-  <ol
-    className="list-group"
-  />
-  <button
-    className="btn btn-primary"
-    onClick={[Function]}
+  <li
+    className="list-group-item list-group-item-action"
   >
-    Get Last Commits
-  </button>
-</div>
+    Add login form
+  </li>
+</ol>
 `;

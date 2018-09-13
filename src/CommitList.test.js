@@ -1,22 +1,16 @@
-"use strict";
-
 import React from "react";
-import CommitList from "./RepoCommits";
-import Commit from "./RepoCommits";
+import CommitList from "./CommitList";
+import Commit from "./Commit";
 import renderer from "react-test-renderer";
 
-// const testData = {
-//   "0": {
-//     commit: { message: "Change language to English" }
-//   },
-//   "1": {
-//     commit: { message: "Modify the login panel" }
-//   }
-// };
+test("CommitList renders properly ", () => {
+  const message = "Add login form";
+  const commit = <Commit key="1" message={message} />;
+  const commits = [];
+  commits.push(commit);
 
-const testData = <Commit index="1" message="Lol" />;
+  const component = renderer.create(<CommitList commits={commits} />);
 
-it("list the commits correctly", () => {
-  const commitList = renderer.create(<CommitList commits={testData} />);
-  expect(commitList).toMatchSnapshot();
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });

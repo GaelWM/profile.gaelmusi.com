@@ -1,17 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the commits correctly 1`] = `
-<div
-  className="card-panel"
+exports[`Commit renders properly  1`] = `
+<li
+  className="list-group-item list-group-item-action"
 >
-  <ol
-    className="list-group"
-  />
-  <button
-    className="btn btn-primary"
-    onClick={[Function]}
-  >
-    Get Last Commits
-  </button>
-</div>
+  Change language to English
+</li>
 `;

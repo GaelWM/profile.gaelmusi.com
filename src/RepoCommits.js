@@ -1,17 +1,7 @@
 import React, { Component } from "react";
+import Commit from "./Commit";
+import CommitList from "./CommitList";
 import axios from "axios";
-
-function Commit(props) {
-  return (
-    <li key={props.index} className="list-group-item list-group-item-action">
-      {props.message}
-    </li>
-  );
-}
-
-function CommitList(props) {
-  return <ol className="list-group">{props.commits}</ol>;
-}
 
 class RepoCommits extends Component {
   constructor() {
