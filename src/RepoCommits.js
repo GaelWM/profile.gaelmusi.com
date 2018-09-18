@@ -24,7 +24,7 @@ class RepoCommits extends Component {
     });
 
     return (
-      <div className="card-panel">
+      <div data-testid="testRepoCommit" className="card-panel">
         <CommitList commits={mycommits} />
         <button className="btn btn-primary" onClick={this.handleGetRepoCommits}>
           Get Last Commits
