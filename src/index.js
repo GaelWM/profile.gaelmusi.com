@@ -5,7 +5,6 @@ import ReactDOM from "react-dom";
 import RepoCommits from "./RepoCommits";
 
 ReactDOM.render(<RepoCommits />, document.getElementById("div-commits"));
-
 // ReactDOM.render(
 // <App />,
 // document.getElementById('root')
