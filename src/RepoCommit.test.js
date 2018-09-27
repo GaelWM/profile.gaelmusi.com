@@ -22,11 +22,13 @@ test("Fetch makes an API call and displays the commits when Get Last Commits is 
   const commits = [
     {
       commit: {
+        key: 0,
         message: "Change the website backgroung image"
       }
     },
     {
       commit: {
+        key: 1,
         message: "Add Login to website"
       }
     }

@@ -20,7 +20,7 @@ class RepoCommits extends Component {
 
   render() {
     const mycommits = this.state.commits.map(function(commit, i) {
-      return <Commit index={i} message={commit.commit.message} />;
+      return <Commit key={i} index={i} message={commit.commit.message} />;
     });
 
     return (
