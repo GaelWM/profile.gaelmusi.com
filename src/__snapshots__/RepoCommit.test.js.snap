@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fetch makes an API call and displays the commits when Get Last Commits is clicked 1`] = `
+Object {
+  "baseElement": <body>
+    <div>
+        <div
+            data-testid="testRepoCommit"
+            class="card-panel"
+        >
+            <ol
+                class="list-group"
+            >
+                <li
+                    class="list-group-item list-group-item-action"
+                >
+                    Change the website backgroung image
+                </li>
+                <li
+                    class="list-group-item list-group-item-action"
+                >
+                    Add Login to website
+                </li>
+            </ol>
+            <button
+                class="btn btn-primary"
+            >
+                Get Last Commits
+            </button>
+        </div>
+    </div>
+</body>,
+  "container": <div>
+    <div
+        data-testid="testRepoCommit"
+        class="card-panel"
+    >
+        <ol
+            class="list-group"
+        >
+            <li
+                class="list-group-item list-group-item-action"
+            >
+                Change the website backgroung image
+            </li>
+            <li
+                class="list-group-item list-group-item-action"
+            >
+                Add Login to website
+            </li>
+        </ol>
+        <button
+            class="btn btn-primary"
+        >
+            Get Last Commits
+        </button>
+    </div>
+</div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
