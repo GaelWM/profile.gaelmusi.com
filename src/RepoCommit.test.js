@@ -1,17 +1,9 @@
 // __tests__/fetch.js
 import React from "react";
-import {
-  render,
-  fireEvent,
-  cleanup,
-  waitForElement
-} from "react-testing-library";
+import { render, cleanup } from "react-testing-library";
 // this adds custom jest matchers from jest-dom
-//mport "jest-dom/extend-expect";
 import axiosMock from "axios"; // the mock lives in a __mocks__ directory
-import { get } from "axios";
 import RepoCommits from "./RepoCommits"; // see the tests for a full implementation
-import renderer from "react-test-renderer";
 
 // automatically unmount and cleanup DOM after the test is finished.
 afterEach(cleanup);
