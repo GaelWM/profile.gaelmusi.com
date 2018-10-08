@@ -2,6 +2,7 @@
 
 exports[`Fetch makes an API call and displays the commits when Get Last Commits is clicked 1`] = `
 Object {
+  "asFragment": [Function],
   "baseElement": <body>
     <div>
         <div
@@ -61,6 +62,7 @@ Object {
   "getAllByLabelText": [Function],
   "getAllByPlaceholderText": [Function],
   "getAllByRole": [Function],
+  "getAllBySelectText": [Function],
   "getAllByTestId": [Function],
   "getAllByText": [Function],
   "getAllByTitle": [Function],
@@ -69,6 +71,7 @@ Object {
   "getByLabelText": [Function],
   "getByPlaceholderText": [Function],
   "getByRole": [Function],
+  "getBySelectText": [Function],
   "getByTestId": [Function],
   "getByText": [Function],
   "getByTitle": [Function],
@@ -77,6 +80,7 @@ Object {
   "queryAllByLabelText": [Function],
   "queryAllByPlaceholderText": [Function],
   "queryAllByRole": [Function],
+  "queryAllBySelectText": [Function],
   "queryAllByTestId": [Function],
   "queryAllByText": [Function],
   "queryAllByTitle": [Function],
@@ -85,6 +89,7 @@ Object {
   "queryByLabelText": [Function],
   "queryByPlaceholderText": [Function],
   "queryByRole": [Function],
+  "queryBySelectText": [Function],
   "queryByTestId": [Function],
   "queryByText": [Function],
   "queryByTitle": [Function],
