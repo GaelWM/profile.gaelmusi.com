@@ -4,20 +4,17 @@ node_js:
 branches:
   only:
     - master
-
 install:
-  - yarn upgrade
   - yarn install --frozen-lockfile
   - yarn test
   - yarn build
-
 deploy:
   provider: s3
-  access_key_id: AKIAIO42DM7NWEB4GAOA
+  access_key_id: AKIAIZCQFHPRAK3BW2SQ
   endpoint: s3-website.eu-west-3.amazonaws.com
   region: eu-west-3
   secret_access_key:
-    secure: bRUeV93kIIxHxC6VoeKud/fPF7qIb7dBDqtLixV037h87cE1PSQwmVHM073CjsdcUsVvkl2q5JKGTg4LhMj1nCQPziIwJcKyeZUwkjG6ZUB9hWKWOjKrLp56YtiIk2M/xXVNtypPozTZNBPHg3EPJhHFOp1Q+2FpoQ43iJRKsTMmB/8i8sGhzyEDuR2V4YbApp+IP+Ffg6ffmjnpeQI+ngWtj0Ynx8wocad+o9l/SkPjYxG8AlQQNqQ7d49fr/ubpWEl7Uztssx8gfXPiams2aQxmRmGpHF59cOAof3Ziw18PlKBzXqcTSGeY46P8yBVwH2c5iNWV1tnFKxW8/BFE6a+JY4s2C3gE7FXSXqjiqOOuohfzV/l+r8ic0nACcCA0wlOnQHo9FHjafw7lpciiVNEH0qG47t/QuTl65R3IOqIDz1v/IYNUlLSPfzJ7N4MsUomKY8ATIEBsnfh3KR8FIQlOrbCJOr6VkpZxEw96E79I2vQpxV0WHX/htGrbLIjLx7oqGfrqnEnlfBhL0nAorOu+UpfkBhr2SJKfy+0XtwV42KZpUb9ZfxFpPWzL99TqhBwn0Kf0hBrVOSxDD3yaXyDSY4c2IVadpgP2B6Mmhe8NtEB9RbVW1bEGA5H5Cfv3UKS3KrcLSVwMH+B6TJeiRv7EwA1rIhxC8Ovy1SGbr4=
+    secure: Zr3z/tRsRdr4TJaoFS6XtHkI4O/4yTg3tqn2cAV+NChqyHa3f20cZMhd98hPTpGqss9PZnYS4TKCWcV7qwN9c5bseVzA0oheuzdKr48EWJ+3Ju7N1eCyNJIj3m5OIx22MR5kkGUD9IadygkylUl8UEa+W3iLYbWs8W79xm+lM58tx2wJEOc6A0FrdEsmDuSar4IzWPGl78orNbehTHBKh/LULVKEdYvjB57A4dwnXZh+NLq4Yke6S38TfVnbRhupeXrl2VyuQZ0eYh0Wd9Gd3dIxfOgcRmF4cLrtkfc8j6mEugowIjXbvgTP97jIJRTqSlnlkAcm7Xg20pDxKxaeuI68PpWXHoYaGmp2k6xMzD9xaMTEOtLq0/L0O13t0/LZYK5AfH+2aVSjaOy5LBPS8MeO5X/QAfbVdffOEFDGEeKfovwHkJP+MqG94TDX5FMU64kch1IzZxLDG+ZTt9qS4bqknW13ENgFVizVfvGZzHUgcwpCKPaUVVpwBwx8q1tVAevTkSJdze38MVBNjD3P8K2n9xcw6IxOk5sWW2z1lxh0G2hQd+JexSRcr63lahRpcM5fis7PPBSEw2eMhsfDajtnqL+3lobxpddexcLI9HqND/jmHU/W61vj+mxcRYbkFnXa1Q7SYzgRxauX5qbB/EEnDkupDUaLQ4qCYVTwr6k=
   bucket: profile.gaelmusi.com
   skip_cleanup: true
   local-dir: build
