@@ -5,6 +5,7 @@ branches:
   only:
     - master
 install:
+  - gem install travis
   - yarn install --frozen-lockfile
   - yarn test
   - yarn build
