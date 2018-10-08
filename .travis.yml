@@ -6,6 +6,7 @@ branches:
     - master
 
 install:
+  - yarn upgrade
   - yarn install --frozen-lockfile
   - yarn test
   - yarn build
@@ -23,5 +24,3 @@ deploy:
   acl: bucket_owner_full_control
   on:
     repo: GaelWM/profile.gaelmusi.com
-
-    
