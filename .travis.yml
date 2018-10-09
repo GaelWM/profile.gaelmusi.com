@@ -12,7 +12,7 @@ install:
 deploy:
   provider: s3
   access_key_id: AKIAIZCQFHPRAK3BW2SQ
-  endpoint: s3-website.eu-west-3.amazonaws.com
+  # endpoint: s3-website.eu-west-3.amazonaws.com
   region: eu-west-3
   secret_access_key:
     secure: Zr3z/tRsRdr4TJaoFS6XtHkI4O/4yTg3tqn2cAV+NChqyHa3f20cZMhd98hPTpGqss9PZnYS4TKCWcV7qwN9c5bseVzA0oheuzdKr48EWJ+3Ju7N1eCyNJIj3m5OIx22MR5kkGUD9IadygkylUl8UEa+W3iLYbWs8W79xm+lM58tx2wJEOc6A0FrdEsmDuSar4IzWPGl78orNbehTHBKh/LULVKEdYvjB57A4dwnXZh+NLq4Yke6S38TfVnbRhupeXrl2VyuQZ0eYh0Wd9Gd3dIxfOgcRmF4cLrtkfc8j6mEugowIjXbvgTP97jIJRTqSlnlkAcm7Xg20pDxKxaeuI68PpWXHoYaGmp2k6xMzD9xaMTEOtLq0/L0O13t0/LZYK5AfH+2aVSjaOy5LBPS8MeO5X/QAfbVdffOEFDGEeKfovwHkJP+MqG94TDX5FMU64kch1IzZxLDG+ZTt9qS4bqknW13ENgFVizVfvGZzHUgcwpCKPaUVVpwBwx8q1tVAevTkSJdze38MVBNjD3P8K2n9xcw6IxOk5sWW2z1lxh0G2hQd+JexSRcr63lahRpcM5fis7PPBSEw2eMhsfDajtnqL+3lobxpddexcLI9HqND/jmHU/W61vj+mxcRYbkFnXa1Q7SYzgRxauX5qbB/EEnDkupDUaLQ4qCYVTwr6k=
