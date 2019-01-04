@@ -4,11 +4,12 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "react": "^16.5.1",
+    "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
-    "react-dom": "^16.5.1",
-    "react-scripts": "1.1.4",
-    "react-testing-library": "^5.0.0",
+    "react-dom": "^16.7.0",
+    "react-materialize": "^2.6.0",
+    "react-scripts": "^2.1.3",
+    "react-testing-library": "^5.4.4",
     "travis": "^0.1.1"
   },
   "scripts": {
@@ -18,6 +19,12 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-test-renderer": "^16.5.1"
-  }
+    "react-test-renderer": "^16.7.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
